@@ -8,5 +8,16 @@
 - **Most instructive error:** A Buildings image containing a road and surrounding hills was incorrectly classified as Mountain with a confidence score of 0.63, showing how background features can confuse the model.
 - **Next — My Own Domain in Week 6:** **Plant Leaf Disease Classification** — I plan to apply transfer learning using ResNet-18 to classify healthy and diseased plant leaves, exploring how pretrained CNN models can be adapted for smart agriculture.
 
+## Dataset
+
+**Dataset Name:** PlantVillage Dataset
+
+Author:Aman Riaz
+
+**Dataset Link:** [PlantVillage Dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
+
+This dataset contains healthy and diseased plant leaf images used to train a ResNet-18 model for plant disease classification using transfer learning.
+
+
 ### Key Learning
 Fine-tuning improved validation accuracy by **3.2 percentage points** compared with feature extraction. This experiment demonstrated how pretrained CNN models can be adapted to new image classification tasks using limited training time and computational resources.
