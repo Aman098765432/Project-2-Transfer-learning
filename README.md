@@ -74,5 +74,17 @@ diagnosis before any treatment decision.
 
 **4. What evidence would change my conclusions?**
 A large drop in performance on field images, or the model scoring well above chance on
+
+## Week 7: Text and Multimodal AI
+
+- **Text classifier:** SMS Spam Collection, 5,572 texts, macro-F1 0.974 (word 1-2 grams) vs 0.982 (char 2-5 grams). Spam precision/recall: 0.979/0.933 (word) and 0.986/0.953 (char).
+- **Top positive / negative features:** call, txt, free, claim, reply / my, me, ok, can. Shortcut-like features: uk, gt, lt.
+- **NER on my domain (agriculture):** held-out F1 0.556 out of the box -> 0.667 with an entity ruler (dev set 0.500 -> 0.919; provided set 0.533 -> 0.875).
+- **Regex fields extracted:** cnic, mobile, amount, date, email, invoice, dose, area, leaf_id. False positives tested: 4 negative tests, all returned nothing.
+- **OCR:** CER raw 0.000 on a clean synthetic invoice; hand-made OCR errors 0.062 / 0.059 / 0.143 -> 0.000 after correction rules.
+- **Pipeline:** Week 6 leaf-disease model + text evidence -> one JSON record (REFER / ROUTINE decision with reasons).
+- **Privacy:** CNIC, phone, and email masked before extraction and logging; leak check passed.
+
+Notebook: https://www.kaggle.com/code/amanriaz749/amanriaz-week7-text-and-multimodel/edit
 background-only images (confirming the shortcut), would show that 0.993 does not reflect real-world
 ability. Strong performance on an independent field dataset would increase confidence.
