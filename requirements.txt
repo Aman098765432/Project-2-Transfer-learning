@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-multipart
+pillow
+pytest
+httpx
+numpy
+# torch and torchvision: install with the CPU index (see README)
